@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: bolder;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    color: #f7931e;
+    font-family: 'roboto', sans-serif;
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.boton{
+    cursor: pointer;
+    display: none;
+}
+
+span{
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: 5px;
+}
+
+.gallery__container {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px; }
+  
+  .container__photo {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.4);
+    transition: 3s; }
+  
+  .container__photo:hover {
+    transform: rotatey(360deg); }
+  
+  .container__photo img {
+    width: 100%; }
+  
+  footer {
+    margin-top: 70px;
+    box-shadow: 10px -2px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'roboto'; }
+  
+  footer ul {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; }
+  
+  footer ul li {
+    width: 50px;
+    height: 50px;
+    margin: 20px; }
+  
+  footer ul li a img {
+    width: 100%; }
+  
+  .pie {
+    text-align: center;
+    margin-bottom: 10px; }
+  
+  .pie p {
+    font-size: 25px;
+    font-family: roboto;
+    font-weight: bolder;}
+
+
+    @media (max-width: 768px){
+
+        nav ul{
+            display: none;
+            min-height: 100vh;
+        }
+    
+        nav ul li{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 100%;
+            text-align: center;
+        }
+    
+        .activar{
+            display: flex;
+        }
+    
+    
+        .boton{
+            display: block;
+        }
+        
+        .logo{
+            margin-left: 5px;
+        }
+
+        .gallery__container {
+            display: flex;
+            flex-wrap: wrap-reverse; }
+          .container__photo {
+            width: 200px;
+            height: 200px;
+            margin: auto; } 
+    
+        footer ul li a img:hover{
+            transform: none;
+        }
+    }
